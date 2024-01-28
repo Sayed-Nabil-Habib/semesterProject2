@@ -1,5 +1,3 @@
-import { createPost } from "../../api/posts/create.mjs";
-
 export async function createPostFormListener() {
     const form = document.querySelector("#createPostForm");
     const imageList = document.getElementById("imageList");
