@@ -58,7 +58,3 @@ export function bidModal(postId) {
     closeBidModal();
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const postId = ''; 
-//     bidModal(postId);
-// });

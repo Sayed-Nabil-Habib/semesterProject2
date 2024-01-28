@@ -4,11 +4,25 @@ export function createPostFormToggle() {
 
     toggleButton.addEventListener("click", function () {
         if (form.classList.contains("hidden")) {
-            form.classList.remove("hidden");
-            toggleButton.textContent = "Hide Form";
+            showForm();
         } else {
-            form.classList.add("hidden");
-            toggleButton.textContent = "Show Form";
+            hideForm();
         }
     });
+}
+
+function showForm() {
+    const form = document.getElementById("createPostForm");
+    const toggleButton = document.getElementById("toggleForm");
+
+    form.classList.remove("hidden");
+    toggleButton.textContent = "Hide Form";
+}
+
+function hideForm() {
+    const form = document.getElementById("createPostForm");
+    const toggleButton = document.getElementById("toggleForm");
+
+    form.classList.add("hidden");
+    toggleButton.textContent = "Show Form";
 }

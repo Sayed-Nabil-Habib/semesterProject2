@@ -6,8 +6,6 @@ export function isLoggedIn() {
     return !!userToken;
 }
 
-
-
 // Function to update button and profile link based on user login status
 export function updateButtonBasedOnLoginStatus() {
     document.addEventListener('DOMContentLoaded', () => {
@@ -31,5 +29,5 @@ export function updateButtonBasedOnLoginStatus() {
     });
 }
 
+// Initialize the update based on login status when the DOM is loaded
 document.addEventListener('DOMContentLoaded', updateButtonBasedOnLoginStatus);
-

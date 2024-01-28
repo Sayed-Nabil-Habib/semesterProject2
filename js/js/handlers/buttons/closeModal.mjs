@@ -3,8 +3,8 @@ export function closeBidModal() {
         window.location.reload();
     };
 
-    const closeButtons = document.querySelectorAll('#bidModal .btn-closeModal');
-    closeButtons.forEach(button => {
+    const closeModalButtons = document.querySelectorAll('#bidModal .btn-closeModal');
+    closeModalButtons.forEach(button => {
         button.addEventListener('click', reloadPage);
     });
 }

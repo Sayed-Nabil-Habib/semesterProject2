@@ -1,6 +1,5 @@
 export function clearInputListeners() {
-    function clearInput(event) {
-        const input = event.target.closest('.input-group').querySelector('input');
+    function clearInput(input) {
         input.value = '';
         console.log('Input cleared');
     }
@@ -9,7 +8,9 @@ export function clearInputListeners() {
         const clearButtons = document.querySelectorAll('.btn-clear');
         clearButtons.forEach(button => {
             button.addEventListener('click', event => {
-                clearInput(event);
+                const inputGroup = event.target.closest('.input-group');
+                const input = inputGroup.querySelector('input');
+                clearInput(input);
                 console.log('Clear button clicked');
             });
         });

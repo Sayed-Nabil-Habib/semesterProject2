@@ -1,19 +1,18 @@
 import { removePost } from "../../api/posts/delete.mjs";
 
 export async function handleDeleteButtonClick(postData) {
-  const confirmation = window.confirm("Are you sure you want to delete this post?");
-  if (confirmation) {
+    const confirmation = window.confirm("Are you sure you want to delete this post?");
+
     try {
-      const postId = postData.id;
-
-      const deletedPost = await removePost(postId); 
-
-      window.location.reload();
+        if (confirmation) {
+            const postId = postData.id;
+            const deletedPost = await removePost(postId);
+            window.location.reload();
+        } else {
+            console.log("Post deletion cancelled.");
+        }
     } catch (error) {
-      console.log("Error deleting post:", error);
-      window.location.reload(); 
+        console.error("Error deleting post:", error);
+        window.location.reload();
     }
-  } else { 
-     window.location.reload(); 
-  }
 }

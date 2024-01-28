@@ -5,16 +5,18 @@ export function createLogoutButton() {
     logoutButton.textContent = "Logout";
     logoutButton.id = "logout";
 
-    logoutButton.addEventListener("click", () => {
+    const handleLogout = () => {
         const confirmLogout = window.confirm("Are you sure you want to log out?");
-        
+
         if (confirmLogout) {
             localStorage.clear();
             window.location.replace("/profile/login/index.html");
         } else {
-            console.log("Canceled logout");
+            console.log("Logout canceled");
         }
-    });
+    };
+
+    logoutButton.addEventListener("click", handleLogout);
 
     return logoutButton;
 }

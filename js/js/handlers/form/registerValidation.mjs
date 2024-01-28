@@ -2,17 +2,16 @@ function togglePasswordValidationMessage() {
   const passwordInput = document.getElementById('passwordReg');
   const passwordValidationMessage = document.querySelector('.password-validation-message');
 
-  passwordInput.addEventListener('input', () => {
+  const updateValidationMessage = () => {
       const isValid = passwordInput.checkValidity();
+      passwordValidationMessage.style.display = isValid ? 'none' : 'block';
+  };
 
-      if (isValid) {
-          passwordValidationMessage.style.display = 'none';
-      } else {
-          passwordValidationMessage.style.display = 'block';
-      }
-  });
+  passwordInput.addEventListener('input', updateValidationMessage);
+
+  // Optionally, you can also trigger the validation on initial load
+  document.addEventListener('DOMContentLoaded', updateValidationMessage);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  togglePasswordValidationMessage();
-});
+// Call the function to set up the validation
+togglePasswordValidationMessage();
