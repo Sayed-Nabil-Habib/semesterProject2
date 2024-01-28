@@ -116,8 +116,8 @@ filter: sepia(0) contrast(100%);
 
 .card .delete-btn {
   position: absolute;
-  top: 6%;
-  left: 75%;
+  top: 5%;
+  right: 50%;
   transform: translate(-50%, -50%);
   z-index: 1; 
 }
@@ -176,7 +176,7 @@ filter: sepia(0) contrast(100%);
 .profile-widget .image-container .avatar {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 0%;
   margin: 0 auto -60px;
   display: block;
 }
@@ -200,19 +200,10 @@ filter: sepia(0) contrast(100%);
   background-image: url("../../images/image.jpeg");
   background-position: center;
   position: relative;
-  background-color: var(--image-overlay-color);
+  
 }
 
-.image-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--image-overlay-color); 
-  filter: blur(var(--image-blur)); 
-}
+
 
 .image-container .avatar {
   position: relative;
@@ -606,6 +597,7 @@ th {
 
 label {
   display: inline-block;
+  color: white;
 }
 
 button {
@@ -7566,7 +7558,7 @@ textarea.form-control-lg {
 
 .text-danger {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+  color: red !important;
 }
 
 .text-light {
@@ -7632,7 +7624,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: black!important;
 }
 
 .bg-secondary {
@@ -7647,7 +7639,7 @@ textarea.form-control-lg {
 
 .bg-info {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  background-color: black !important;
 }
 
 .bg-warning {
