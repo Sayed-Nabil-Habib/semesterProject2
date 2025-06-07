@@ -1,45 +1,77 @@
-# Portfolio 1
+# Elio – Portfolio Project
 
-![image](./images/Screenshot%202024-01-28%20at%2014.52.13.png)
+![Elio Logo](./images/logo.png)
 
-A simple overview of the use/purpose of the project.
+> A modern web marketplace where users can post, browse, and search for items to buy or sell.
 
-## Description
+## 📖 Description
 
-A web application was made for the semester project 2.
+This project was developed as part of **Semester Project 2**. It is a responsive single-page application that allows users to browse auction-style listings, log in, post their own items, and interact with other users.
 
-## Built With
+---
 
-- HTML
-- CSS/SCSS
-- JavaScript
+## 🔄 Recent Improvements
 
-## Getting Started
+- ✅ **Added brand logo** to the navbar for better visual identity.
+- ✅ **Improved accessibility** by including descriptive `alt` text for images.
+- ✅ Cleaned up and organized HTML layout and spacing for easier maintenance.
 
-### Installing
+---
 
-1. Clone the repo:
+## 🚀 Built With
+
+- **HTML**
+- **CSS / SCSS**
+- **JavaScript (ES Modules)**
+- **Bootstrap 5**
+
+---
+
+## 🔧 Getting Started
+
+### ✅ Installation
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/Sayed-Nabil-Habib/semesterProject2
 ```
 
-### Running
+Running the Project
+To run the app locally:
 
-To run the blog, simply download the live server extention on VS code and right click on any html file and click on "open with live server".
+Install the Live Server extension in VS Code.
 
-## Contributing
+Open the folder in VS Code.
 
-I appreciate your interest in contributing! Even small contributions can make a difference. Here's how you can contribute:
+Right-click on index.html and select "Open with Live Server".
 
-Fork the repository.
-Make your desired changes or additions.
-Submit a pull request.
+🤝 Contributing
+I appreciate your interest in contributing! Here’s how you can help:
 
-That's it! I will review your contribution and merge it if it aligns with the goals and style.
+Fork this repository.
 
-If you have any questions or need assistance, feel free to reach out to me. Thank you for your support!
+Create your feature branch:
 
-```
+bash
+Copy
+Edit
+git checkout -b feature-name
+Commit your changes:
 
-```
+bash
+Copy
+Edit
+git commit -m "Add your message here"
+Push to the branch:
+
+bash
+Copy
+Edit
+git push origin feature-name
+Open a pull request.
+
+Your contribution will be reviewed and merged if it aligns with the project's goals.
+Feel free to contact me if you have any questions or suggestions!
+
+© 2024 Elio – All rights reserved.
